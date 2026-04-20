@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this code or the associated framework, please cite the accompanying paper."
+title: "Automated Creativity Evaluation of Language Models Across Open-Ended Tasks"
+type: software
+authors:
+  - family-names: Tan
+    given-names: Min Sen
+    affiliation: Raffles Institution
+    email: minsen@tanminsen.com
+  - family-names: Choy
+    given-names: Zachary Kit Chun
+    affiliation: Raffles Institution
+  - family-names: Alsagoff
+    given-names: Syed Ali Redha
+    affiliation: "College of Computing and Data Science, Nanyang Technological University"
+  - family-names: Wangsajaya
+    given-names: Nadya Yuki
+    affiliation: "College of Computing and Data Science, Nanyang Technological University"
+  - family-names: Banerjee
+    given-names: Mohor
+    affiliation: "College of Computing and Data Science, Nanyang Technological University"
+  - family-names: Saikia
+    given-names: Swaagat Bikash
+    affiliation: Raffles Institution
+  - family-names: Chan
+    given-names: Alvin
+    affiliation: "College of Computing and Data Science, Nanyang Technological University"
+repository-code: "https://github.com/shreddedpaper/creativity-eval"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Automated Creativity Evaluation of Language Models Across Open-Ended Tasks"
+  authors:
+    - family-names: Tan
+      given-names: Min Sen
+    - family-names: Choy
+      given-names: Zachary Kit Chun
+    - family-names: Alsagoff
+      given-names: Syed Ali Redha
+    - family-names: Wangsajaya
+      given-names: Nadya Yuki
+    - family-names: Banerjee
+      given-names: Mohor
+    - family-names: Saikia
+      given-names: Swaagat Bikash
+    - family-names: Chan
+      given-names: Alvin
+  conference:
+    name: "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics"
+  year: 2026
+  notes: "To appear. ACL Anthology entry and DOI forthcoming."
