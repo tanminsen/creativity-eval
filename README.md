@@ -21,7 +21,7 @@ HypoGen and BookMIA.*
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 📄 Paper — *coming soon* &nbsp;|&nbsp;
-🐙 [Code](https://github.com/shreddedpaper/creativity-eval)
+🐙 [Code](https://github.com/tanminsen/creativity-eval)
 
 <p align="center">
   <img src="assets/teaser-overview.png" alt="Benchmark overview (paper Figure 3): step-wise candidate sampling, semantic clustering for divergent creativity, and retrieval-based multi-agent judge for convergent creativity." width="90%">
@@ -97,7 +97,7 @@ accuracy on MacGyver and BookMIA.
 Requires Python ≥ 3.10.
 
 ```bash
-git clone https://github.com/shreddedpaper/creativity-eval.git
+git clone https://github.com/tanminsen/creativity-eval.git
 cd creativity-eval
 pip install -r requirements.txt
 ```
@@ -158,21 +158,31 @@ python export_data.py llama results_llama31_8b_T1.json \
     llmjudge deberta false 1.0 300 nohs 0
 ```
 
-### HypoGen (Table 4) and BookMIA (Table 5)
+### HypoGen and BookMIA (Tables 4 and 5)
 
-Numbers reported in paper Tables 4 and 5 use the same step-wise pipeline
-and retrieval-based judge on the HypoGen and BookMIA datasets. The
-dataset-specific runners and criterion sets for these two domains are
-not included in this repository; cite the paper directly for those
-results.
+The step-wise runners and retrieval-based judge in this repository are
+instantiated for MacGyver. Adapting them to HypoGen (O'Neill et al.,
+2025; [arXiv:2504.12976](https://arxiv.org/abs/2504.12976)) or BookMIA
+(Shi et al., 2024; [arXiv:2310.16789](https://arxiv.org/abs/2310.16789))
+requires swapping the dataset loader in [`src/data.py`](src/data.py)
+and substituting the criterion set passed to `modified_chateval_combined`
+in [`src/LLMevalframeworks.py`](src/LLMevalframeworks.py) with the
+dataset-specific definitions from paper Appendix D.1:
+
+- **HypoGen** — feasibility, relevance, scientific accuracy.
+- **BookMIA** — narrative coherence, emotional/psychological realism, plot completion.
+
+Reference numbers for those domains are reproduced below.
 
 ---
 
 ## Results
 
 Semantic Entropy (divergent) and multi-agent judge scores (convergent)
-on 300 MacGyver problems per model, paper Table 3. Higher is better for
-all four right-hand columns.
+on 300 problems per model per domain. Higher is better on all
+convergent columns. Bold = best per column within each table.
+
+### MacGyver (Table 3)
 
 | Model | Semantic Entropy | Feasibility | Safety | Effectiveness | Overall |
 |---|---:|---:|---:|---:|---:|
@@ -184,15 +194,30 @@ all four right-hand columns.
 | Llama 3.1 70B Nemotron Instruct | 2.19 | 0.36 | 0.57 | 0.06 | 0.33 |
 | Llama 3.1 405B Instruct | 2.08 | 0.66 | 0.75 | 0.12 | 0.51 |
 | Llama 3.3 70B Instruct | 2.10 | 0.45 | 0.68 | 0.04 | 0.39 |
-| Deepseek R1 70B Distilled | 2.10 | 0.58 | 0.75 | 0.07 | 0.47 |
+| DeepSeek R1 70B Distilled | 2.10 | 0.58 | 0.75 | 0.07 | 0.47 |
 | GPT-3.5 Turbo | 2.02 | 0.51 | 0.71 | 0.03 | 0.42 |
 | GPT-4o mini | 2.05 | 0.62 | 0.76 | 0.12 | 0.50 |
 | **GPT-4o** | 2.08 | **0.82** | **0.86** | **0.21** | **0.63** |
 | Qwen3 32B (Thinking) | 2.02 | 0.65 | 0.78 | 0.12 | 0.52 |
 | Qwen3 32B (Non-thinking) | 2.08 | 0.49 | 0.74 | 0.08 | 0.44 |
 
-HypoGen (Table 4) and BookMIA (Table 5) results are reported in the
-paper.
+### HypoGen (Table 4)
+
+| Model | Semantic Entropy | Feasibility | Relevance | Scientific Accuracy | Overall |
+|---|---:|---:|---:|---:|---:|
+| GPT-4o | 2.07 | 0.28 | 0.61 | 0.17 | 0.35 |
+| Llama 3.1 8B Instruct | 2.04 | 0.21 | 0.56 | 0.12 | 0.29 |
+| Qwen3 32B (Thinking) | 1.72 | 0.41 | **0.78** | 0.21 | 0.47 |
+| **Qwen3 32B (Non-thinking)** | 1.66 | **0.50** | 0.76 | **0.26** | **0.51** |
+
+### BookMIA (Table 5)
+
+| Model | Semantic Entropy | Coherence | Realism | Plot Completion | Overall |
+|---|---:|---:|---:|---:|---:|
+| GPT-4o | 2.17 | 0.36 | 0.40 | 0.23 | 0.33 |
+| Llama 3.1 8B Instruct | 1.89 | 0.03 | 0.04 | 0.03 | 0.03 |
+| **Qwen3 32B (Thinking)** | 2.19 | **0.50** | 0.41 | **0.52** | **0.48** |
+| Qwen3 32B (Non-thinking) | 2.19 | 0.36 | **0.44** | 0.35 | 0.38 |
 
 ---
 

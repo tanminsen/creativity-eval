@@ -25,7 +25,7 @@ authors:
   - family-names: Chan
     given-names: Alvin
     affiliation: "College of Computing and Data Science, Nanyang Technological University"
-repository-code: "https://github.com/shreddedpaper/creativity-eval"
+repository-code: "https://github.com/tanminsen/creativity-eval"
 license: MIT
 preferred-citation:
   type: conference-paper
