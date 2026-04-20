@@ -60,6 +60,13 @@ delivers context-sensitive evaluation of task fulfilment with over 60%
 improved efficiency. We validate our framework in three qualitatively
 distinct domains: problem-solving (MacGyver), research ideation
 (HypoGen), and creative writing (BookMIA), using a broad suite of LLMs.
+Empirical results show that our framework reliably captures key facets
+of creativity, including novelty, diversity, and task fulfilment, and
+reveal how model properties, such as size, temperature, recency, and
+reasoning, impact creative performance. Our work establishes a
+reproducible and generalizable standard for automated LLM creativity
+evaluation, paving the way for scalable benchmarking and accelerating
+progress in creative AI.
 
 ---
 
