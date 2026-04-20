@@ -4,7 +4,7 @@
 and convergent creativity in LLM generations, applied to MacGyver,
 HypoGen and BookMIA.*
 
-**Tan Min Sen**<sup>1,\*,†</sup>,
+**Tan Min Sen**<sup>1\*†</sup>,
 **Zachary Choy Kit Chun**<sup>1\*</sup>,
 **Syed Ali Redha Alsagoff**<sup>2</sup>,
 **Nadya Yuki Wangsajaya**<sup>2</sup>,
