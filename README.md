@@ -10,14 +10,14 @@ HypoGen and BookMIA.*
 **Nadya Yuki Wangsajaya**<sup>2</sup>,
 **Banerjee Mohor**<sup>2</sup>,
 **Swaagat Bikash Saikia**<sup>1</sup>,
-**Alvin Chan**<sup>2,3,4</sup>
+**Alvin Chan**<sup>2,3,4,†</sup>
 
 <sup>1</sup> Raffles Institution  
 <sup>2</sup> College of Computing and Data Science, Nanyang Technological University  
 <sup>3</sup> Lee Kong Chian School of Medicine, Nanyang Technological University  
 <sup>4</sup> Centre of AI in Medicine (C-AIM), Nanyang Technological University  
 
-<sup>\*</sup> Equal contribution &nbsp;&nbsp; <sup>†</sup> Corresponding author: [minsen@tanminsen.com](mailto:minsen@tanminsen.com)
+<sup>\*</sup> Equal contribution &nbsp;&nbsp; <sup>†</sup> Corresponding authors: [guoweialvin.chan@ntu.edu.sg](mailto:guoweialvin.chan@ntu.edu.sg), [minsen@tanminsen.com](mailto:minsen@tanminsen.com)
 
 [![ACL 2026](https://img.shields.io/badge/ACL-2026%20Main-b31b1b.svg)](#)
 ![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-lightgrey.svg)
@@ -301,4 +301,7 @@ Released under the MIT License. See [LICENSE](LICENSE).
 
 ## Contact
 
-Corresponding author: Tan Min Sen — [minsen@tanminsen.com](mailto:minsen@tanminsen.com)
+Corresponding authors:
+
+- Alvin Chan — [guoweialvin.chan@ntu.edu.sg](mailto:guoweialvin.chan@ntu.edu.sg)
+- Tan Min Sen — [minsen@tanminsen.com](mailto:minsen@tanminsen.com)

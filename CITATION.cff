@@ -25,6 +25,7 @@ authors:
   - family-names: Chan
     given-names: Alvin
     affiliation: "College of Computing and Data Science, Nanyang Technological University"
+    email: guoweialvin.chan@ntu.edu.sg
 repository-code: "https://github.com/tanminsen/creativity-eval"
 license: MIT
 preferred-citation:
