@@ -146,9 +146,10 @@ Results are serialised to the JSON file in the second argument.
 
 ### MacGyver (Table 3)
 
-Run each model in `<model>` below, concatenate the per-model JSON outputs,
-and recover the Table 3 numbers by averaging per-problem Semantic Entropy
-(divergent) and the multi-agent judge verdicts (convergent).
+Run each model in `<model>` below. Each run writes one JSON file. To
+reproduce the Table 3 numbers for a given model, take the mean of its
+per-problem Semantic Entropy values (divergent column) and the mean of
+its per-problem multi-agent judge verdicts (convergent columns).
 
 Supported `<model>` tags mapped to HuggingFace / OpenAI paths in
 [`src/llama_funcs.py`](src/llama_funcs.py):
