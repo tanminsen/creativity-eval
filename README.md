@@ -4,17 +4,20 @@
 and convergent creativity in LLM generations, applied to MacGyver,
 HypoGen and BookMIA.*
 
-**Tan Min Sen**¹<sup>\*†</sup>, **Zachary Choy Kit Chun**¹<sup>\*</sup>,
-**Syed Ali Redha Alsagoff**², **Nadya Yuki Wangsajaya**²,
-**Banerjee Mohor**², **Swaagat Bikash Saikia**¹, **Alvin Chan**²<sup>,3,4</sup>
+**Tan Min Sen**<sup>1\*†</sup>,
+**Zachary Choy Kit Chun**<sup>1\*</sup>,
+**Syed Ali Redha Alsagoff**<sup>2</sup>,
+**Nadya Yuki Wangsajaya**<sup>2</sup>,
+**Banerjee Mohor**<sup>2</sup>,
+**Swaagat Bikash Saikia**<sup>1</sup>,
+**Alvin Chan**<sup>2,3,4</sup>
 
-<sup>1</sup> Raffles Institution &nbsp;
-<sup>2</sup> College of Computing and Data Science, Nanyang Technological University &nbsp;
-<sup>3</sup> Lee Kong Chian School of Medicine, Nanyang Technological University &nbsp;
-<sup>4</sup> Centre of AI in Medicine (C-AIM), Nanyang Technological University
+<sup>1</sup> Raffles Institution  
+<sup>2</sup> College of Computing and Data Science, Nanyang Technological University  
+<sup>3</sup> Lee Kong Chian School of Medicine, Nanyang Technological University  
+<sup>4</sup> Centre of AI in Medicine (C-AIM), Nanyang Technological University  
 
-<sup>\*</sup> Equal contribution &nbsp;
-<sup>†</sup> Corresponding author: [minsen@tanminsen.com](mailto:minsen@tanminsen.com)
+<sup>\*</sup> Equal contribution &nbsp;&nbsp; <sup>†</sup> Corresponding author: [minsen@tanminsen.com](mailto:minsen@tanminsen.com)
 
 [![ACL 2026](https://img.shields.io/badge/ACL-2026%20Main-b31b1b.svg)](#)
 ![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-lightgrey.svg)
