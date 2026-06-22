@@ -49,4 +49,9 @@ preferred-citation:
   conference:
     name: "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics"
   year: 2026
+  url: "https://arxiv.org/abs/2606.11762"
+  identifiers:
+    - type: other
+      value: "arXiv:2606.11762"
+      description: "arXiv preprint"
   notes: "To appear. ACL Anthology entry and DOI forthcoming."

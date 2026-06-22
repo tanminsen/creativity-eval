@@ -20,10 +20,10 @@ HypoGen and BookMIA.*
 <sup>\*</sup> Equal contribution &nbsp;&nbsp; <sup>†</sup> Corresponding authors: [guoweialvin.chan@ntu.edu.sg](mailto:guoweialvin.chan@ntu.edu.sg), [minsen@tanminsen.com](mailto:minsen@tanminsen.com)
 
 [![ACL 2026](https://img.shields.io/badge/ACL-2026%20Main-b31b1b.svg)](#)
-![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-lightgrey.svg)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.11762-b31b1b.svg)](https://arxiv.org/abs/2606.11762)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-📄 Paper — *coming soon* &nbsp;|&nbsp;
+📄 [Paper (arXiv)](https://arxiv.org/abs/2606.11762) &nbsp;|&nbsp;
 🐙 [Code](https://github.com/tanminsen/creativity-eval)
 
 <p align="center">
@@ -272,7 +272,11 @@ convergent columns. Bold = best per column within each table.
                Chan, Alvin},
   booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics},
   year      = {2026},
-  note      = {To appear. ACL Anthology entry and arXiv preprint forthcoming.}
+  eprint        = {2606.11762},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2606.11762},
+  note      = {To appear. ACL Anthology entry forthcoming.}
 }
 ```
 
